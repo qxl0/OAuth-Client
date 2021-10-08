@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { myContext } from '../../Context';
+import { IUser } from '../../types/maintypes';
 
 export default function Homepage() {
+  const context = useContext(myContext) as IUser;
   return (
     <div>
-      <h1>Home page</h1>
+      {
+        context? (
+          <h1>Welcome back {context.username}</h1>
+        ) : <h1>Welcome to my website  </h1>
+      }
     </div>
   )
 }
