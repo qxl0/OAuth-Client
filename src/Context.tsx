@@ -6,7 +6,7 @@ export default function Context(props: any) {
 
   const [userObject, setUserObject] = useState<any>();
   useEffect(() => {
-    axios.get("http://localhost:4000/getuser", {
+    axios.get("https://oauthbackendserver.herokuapp.com/getuser", {
       withCredentials: true
     }).then(res => {
       if (res.data){

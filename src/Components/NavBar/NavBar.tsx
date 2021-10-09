@@ -9,7 +9,7 @@ export const  NavBar = () => {
   const user = useContext(myContext) as IUser;
   
   const logout = () => {
-    axios.get("http://localhost:4000/auth/logout", {
+    axios.get("https://oauthbackendserver.herokuapp.com/auth/logout", {
       withCredentials: true
     }).then(( res: AxiosResponse ) => {
       console.log(res);

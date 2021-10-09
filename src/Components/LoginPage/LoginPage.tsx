@@ -6,15 +6,15 @@ import styles from './LoginPage.module.css';
 
 export default function Loginpage() {
   const googlelogin = () => {
-    window.open("http://localhost:4000/auth/google", "_self")
+    window.open("https://oauthbackendserver.herokuapp.com/auth/google", "_self")
   }
 
   const githublogin = () => {
-    window.open("http://localhost:4000/auth/github", "_self")
+    window.open("https://oauthbackendserver.herokuapp.com/auth/github", "_self")
   }
 
   const twitterlogin = () => {
-    window.open("http://localhost:4000/auth/twitter", "_self")
+    window.open("https://oauthbackendserver.herokuapp.com/auth/twitter", "_self")
   }
 
   return (

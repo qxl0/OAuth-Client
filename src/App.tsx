@@ -5,9 +5,10 @@ import Loginpage from './Components/LoginPage/LoginPage';
 import {NavBar} from './Components/NavBar/NavBar';
 import { useContext } from 'react';
 import { myContext } from './Context';
+import { IUser } from './types/maintypes';
 
 function App() {
-  const userObject = useContext(myContext);
+  const userObject = useContext(myContext) as IUser;
   console.log(userObject);
   return (
     <BrowserRouter>
