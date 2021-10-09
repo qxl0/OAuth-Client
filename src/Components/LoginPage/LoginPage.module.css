@@ -36,6 +36,15 @@
     left: 8px;
 }
 
+.facbebookContainer {
+    background: #3b5998;
+}
+
+.facbebookContainer img {
+    width: 15%;
+    left: 8px;
+}
+
 .loginPage {
     width: 100vw;
     display: flex;

@@ -2,6 +2,8 @@ import React from 'react'
 import googleImage from '../../assets/googleimage.png';
 import githubImage from '../../assets/githubImage.png';
 import twitterImage from '../../assets/twitterImage.png';
+import facebookImage from '../../assets/facebookImage.png';
+
 import styles from './LoginPage.module.css';
 
 export default function Loginpage() {
@@ -17,6 +19,9 @@ export default function Loginpage() {
     window.open("https://oauthbackendserver.herokuapp.com/auth/twitter", "_self")
   }
 
+  const facebooklogin = () => {
+    window.open("https://oauthbackendserver.herokuapp.com/auth/facebook", "_self")
+  }
   return (
     <div className={styles.loginPage}>
       <div className={styles.loginForm}>
@@ -34,6 +39,11 @@ export default function Loginpage() {
         <div className={`${styles.googleContainer} ${styles.twitterContainer}`} onClick = {twitterlogin}>
           <img src={twitterImage} alt="Twitter Icon"/>
           <p>Login with Twitter</p>
+        </div>
+
+        <div className={`${styles.googleContainer} ${styles.facebookContainer}`} onClick = {facebooklogin}>
+          <img src={facebookImage} alt="Twitter Icon"/>
+          <p>Login with Facebook</p>
         </div>
       </div>
     </div>
